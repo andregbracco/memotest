@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Grilla from './components/Grilla';
+import EligeCantidad from './components/EligeCantidad';
 
 function App() {
+  
+  const [rango, setRango] = useState([])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>MEMOTEST</h1>
+      <EligeCantidad setRango={setRango} />
+      <Grilla rango={rango}/>
+
     </div>
   );
 }
 
 export default App;
+
+
+
