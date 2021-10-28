@@ -7,16 +7,15 @@ const EligeCantidad = ({setRango}) => {
         setRango(rango1)      
     }
     return (
-        <div>
-            <label>Elige cantidad: </label>
+        <div className='conteiner-eleccion' >
+            <label className='eleccion'>Elige cantidad: </label>
             <select onChange={tomarCantidad}>
                 <option ></option>
                 <option value="2">2</option>
-                <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
                 <option value="6">6</option>
-                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
             </select>
         </div>
     )
